@@ -1,2 +1,2 @@
-# Terraform-champin
-Solve the terrfaorm tasks in Terraform champin workshop
+# Terraform-champs
+Solve the terrfaorm tasks in Terraform champs workshop
