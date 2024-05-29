@@ -4,6 +4,8 @@ Solve the terraform tasks in the Terraform champs workshop
 Url :https://github.com/Mohamed-Eleraki/Terraform-Champs
 
 Day one task
+
+
 use IaC Terrafrom to build the following resource besides requirement specifications:
 
 Create VPC.
