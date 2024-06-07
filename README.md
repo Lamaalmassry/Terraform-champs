@@ -3,8 +3,9 @@ Solve the terraform tasks in the Terraform champs workshop
 
 Url :https://github.com/Mohamed-Eleraki/Terraform-Champs
 
-Day 1: Create Networking Resources with Terraform
-Task
+# Day 1: Create Networking Resources with Terraform
+
+**Task**
 Use Infrastructure as Code (IaC) with Terraform to build the following resources:
 
 Create VPC
