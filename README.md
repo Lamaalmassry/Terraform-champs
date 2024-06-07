@@ -134,4 +134,4 @@ At the end of the week, submit the following workshop. Use Infrastructure as Cod
 
 ### Code Sample
 
-[https://github.com/Lamaalmassry/Terraform-champs/tree/main/Week%20Two%20Workshop](#)
+[https://github.com/Lamaalmassry/Terraform-champs/tree/8f4ddcfa645658b1d932ed7f03c452b09cc4b236/Week%20Two%20Workshop](#)
