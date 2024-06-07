@@ -25,7 +25,7 @@ Use Infrastructure as Code (IaC) with Terraform to build the following resources
 
 ### Code Sample
 
-[https://github.com/Lamaalmassry/Terraform-champs/blob/main/Day1/main.tf](#)
+[[https://github.com/Lamaalmassry/Terraform-champs/blob/main/Day1/main.tf](#)](https://github.com/Lamaalmassry/Terraform-champs/blob/8f4ddcfa645658b1d932ed7f03c452b09cc4b236/Day1/main.tf)
 
 ## Day 2: Manage S3 Bucket with Terraform
 
@@ -51,7 +51,7 @@ Use Infrastructure as Code (IaC) with Terraform to build the following resources
 
 ### Code Sample
 
-[https://github.com/Lamaalmassry/Terraform-champs/blob/main/Day2/main.tf](#)
+https://github.com/Lamaalmassry/Terraform-champs/blob/8f4ddcfa645658b1d932ed7f03c452b09cc4b236/Day2/main.tf
 
 ## Day 3: Configure S3 Lifecycle Rules with Terraform
 
@@ -82,7 +82,7 @@ Use Infrastructure as Code (IaC) with Terraform to build the following resources
 
 ### Code Sample
 
-[https://github.com/Lamaalmassry/Terraform-champs/blob/main/Day3/main.tf](#)
+https://github.com/Lamaalmassry/Terraform-champs/blob/main/Day3/main.tf
 
 ## Day 4: Create IAM Users with Terraform
 
@@ -105,7 +105,7 @@ Use Infrastructure as Code (IaC) with Terraform to build the following resources
 
 ### Code Sample
 
-[https://github.com/Lamaalmassry/Terraform-champs/blob/main/Day4/main.tf](#)
+https://github.com/Lamaalmassry/Terraform-champs/blob/main/Day4/main.tf
 
 ## Week Two Workshop: S3 Configuration from AWS Console using Terraform
 
