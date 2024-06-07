@@ -3,12 +3,6 @@ Solve the terraform tasks in the Terraform champs workshop
 
 Url :https://github.com/Mohamed-Eleraki/Terraform-Champs
 
-# Terraform-champs
-Solve the terraform tasks in the Terraform champs workshop
-
-Url :https://github.com/Mohamed-Eleraki/Terraform-Champs
-
-# GitHub Day 1
 
 ## Day 1: Create Networking Resources with Terraform
 
