@@ -45,8 +45,3 @@ resource "aws_s3_bucket_lifecycle_configuration" "lifecycle" {
 
 
 
-/*resource "aws_s3_bucket_object_lock_configuration" "objevtlock" {
-  bucket = aws_s3_bucket.terraformbucket.id
-  object_lock_enabled="Disabled"
-}*/
-
