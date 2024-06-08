@@ -1,25 +1,19 @@
 
 terraform {
-    required_providers {
-        aws = {
-            source = "hashicorp/aws"
-            version = "~> 5.0"
-        }
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
     }
-}
-
-
-
-
-provider "aws" {
-  region ="us-east-1"
-}
-
-
-terraform {
+  }
+  
   backend "s3" {
     bucket = "terraform-workshop-lama"
-    key = "statefile.tfstate"
+    key    = "statefile.tfstate"
     region = "us-east-1"
   }
+}
+
+provider "aws" {
+  region = "us-east-1"
 }
