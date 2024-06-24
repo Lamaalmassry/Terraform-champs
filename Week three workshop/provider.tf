@@ -6,8 +6,8 @@ terraform {
     }
   }
   
-  backend "s3" {
-    bucket = "lama-bucket-workshop"
+ backend "s3" {
+    bucket = "lama_bucket_workshop"
     key    = "statefile.tfstate"
     region = "us-east-1"
   }
