@@ -1,0 +1,18 @@
+1.Install PostgreSQL 15
+
+sudo dnf install postgresql15.x86_64 postgresql15-server
+
+
+2.Initialize the PostgreSQL Database
+
+sudo postgresql-setup --initdb
+
+
+3.Start and Enable the Service
+
+sudo systemctl start postgresql
+
+
+4. Enable it to start on boot
+
+sudo systemctl enable postgresql
