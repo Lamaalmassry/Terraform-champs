@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     s3 = boto3.client('s3')
     dest_bucket = os.environ['DEST_BUCKET']
     
-    # Log the event to CloudWatch for debugging
+
     print("Event: ", json.dumps(event))
     
     try:
