@@ -129,9 +129,164 @@ At the end of the week, submit the following workshop. Use Infrastructure as Cod
 - Resources must be created in the `us-east-1` region, otherwise, the deployment will fail.
 - Resources must have the following tags, otherwise, the deployment will fail:
   - **Key**: "Environment" **Value**: "terraformChamps"
-  - **Key**: "Owner" **Value**: "<type_your_name_here>"
+ 
+
+# Week Three Workshop
+
+## Overview
+This week's workshop focuses on using Infrastructure as Code (IaC) with Terraform to manage AWS resources, specifically S3, IAM users, and roles. You'll configure S3 policies and test accessibility using AWS CLI commands.
+
+## Task Outline
+
+1. **Create S3 Bucket for Terraform State File:**
+   - Use the bucket name `erakiterrafromstatefiles`.
+   - Specify a unique name for the state file key to avoid conflicts.
+   - Create a directory under the S3 bucket called `logs`.
+
+2. **Create IAM Users:**
+   - User 1: `Mostafa`
+   - User 2: `Taha`
+
+3. **Create IAM Role for Taha:**
+   - Assign the role with the `s3:GetObject` policy, restricted to the `logs` directory.
+
+4. **Configure S3 Policy:**
+   - Allow `Mostafa` to `s3:PutObject` in the entire S3 bucket.
+
+5. **Test Accessibility Using AWS CLI:**
+   - Verify access using AWS CLI `s3` commands.
+   - Verify access using AWS CLI `s3api` commands.
+
+6. **Fork a GitHub Repository:**
+   - Fork the provided repository.
+   - Append your Terraform code samples to the code samples section.
+   - Submit a pull request for review.
+
+## Requirement Specifications
+
+- Resources must be created in the **us-east-1** region.
+- Resources must have the following tags:
+  - **Key**: `Environment` | **Value**: `terraformChamps`
+  - **Key**: `Owner` | **Value**: `<type_your_name_here>`
 - Prefer to use variables for configuration.
 
-### Code Sample
+## Diagram
 
-https://github.com/Lamaalmassry/Terraform-champs/tree/8f4ddcfa645658b1d932ed7f03c452b09cc4b236/Week%20Two%20Workshop
+Create a diagram of this deployment using draw.io or any diagramming tool of your choice.
+
+
+# Week Four Task
+
+## Overview
+This week's task focuses on learning about EC2 instance types and VPC endpoints. You'll also append new knowledge to your documentation and fork a GitHub repository to submit your code samples.
+
+## Task Outline
+
+1. **Learn about EC2 Instance Types and VPC Endpoints:**
+   - Study the different EC2 instance types.
+   - Understand the purpose and functionality of VPC endpoints.
+
+2. **Append New Knowledge to Your Documentation:**
+   - Document what you've learned about EC2 instance types and VPC endpoints.
+
+3. **Fork a GitHub Repo and Append Your Code Samples:**
+   - Fork the provided repository.
+   - Append your Terraform code samples to the code samples section.
+   - Submit a pull request for review.
+
+4. **Design a Deployment Diagram:**
+   - Use draw.io or any diagramming tool to create a diagram of the deployment.
+
+## Week Four Workshop
+
+### Task Outline
+
+1. **Create an S3 Bucket for Terraform State File:**
+   - Use the bucket name `erakiterrafromstatefiles`.
+   - Specify a unique name for the state file key to avoid conflicts.
+   - Create a general-purpose S3 bucket.
+   - Create a directory under the S3 bucket called `logs`.
+
+2. **Create IAM Role for EC2 Instance:**
+   - Assign the AWS managed policy for `s3:FullAccess` to the role.
+
+3. **Create an EC2 Instance:**
+   - Attach the IAM role to the EC2 instance.
+   - Verify accessibility by sending a file to the S3 bucket from the EC2 instance using AWS CLI `s3` and `s3api` commands.
+
+4. **Submit Your Code:**
+   - Fork the provided repository.
+   - Append your Terraform code samples.
+   - Submit a pull request for review.
+
+## Requirement Specifications
+
+- Resources must be created in the **us-east-1** region.
+- Resources must have the following tags:
+  - **Key**: `Environment` | **Value**: `terraformChamps`
+  - **Key**: `Owner` | **Value**: `<type_your_name_here>`
+- Prefer to use variables for configuration.
+
+---
+
+# Week Five Task
+
+## Overview
+This week's focus is on learning about Amazon RDS and deploying an RDS instance using Terraform. You'll append new knowledge to your documentation, fork a GitHub repository, and submit your code samples.
+
+## Task Outline
+
+1. **Dig Deep into RDS:**
+   - Study Amazon RDS using AWS documentation.
+   - Document your findings in your documentation.
+
+2. **Fork a GitHub Repo and Append Your Code Samples:**
+   - Fork the provided repository.
+   - Append your Terraform code samples to the code samples section.
+   - Submit a pull request for review.
+
+3. **Design a Deployment Diagram:**
+   - Use draw.io or any diagramming tool to create a diagram of the deployment.
+
+## Week Five Workshop
+
+### Task Outline
+
+1. **Create an S3 Bucket for Terraform State File:**
+   - Use the bucket name `erakiterrafromstatefiles`.
+   - Specify a unique name for the state file key.
+
+2. **Create a VPC, Subnets, and Security Group:**
+   - VPC: `vpc-01`
+   - Subnets: `subnet-01`, `subnet-02`
+   - Security Group: `sg-01`
+     - Allows inbound traffic on port 5432 from all sources.
+     - Allows outbound traffic for all.
+
+3. **Create a Subnet Group for RDS:**
+   - Include the created subnets in the subnet group.
+
+4. **Create an RDS Instance:**
+   - Database: PostgreSQL (latest version)
+   - Storage: 20 GB
+   - Instance Class: `db.t3.micro`
+   - Database Name: `postgresqldatabase`
+   - Username: `postgres`
+   - Password: `CHOOSE ONE`
+   - Security Group: `sg-01`
+   - Skip final snapshot: `true`
+
+5. **Test Connection Using pgAdmin:**
+   - Ensure the RDS instance is publicly accessible.
+   - Connect to the RDS instance from your local device using pgAdmin.
+
+## Requirement Specifications
+
+- Resources must be created in the **us-east-1** region.
+- Resources must have the following tags:
+  - **Key**: `Environment` | **Value**: `terraformChamps`
+  - **Key**: `Owner` | **Value**: `<type_your_name_here>`
+- Prefer to use variables for configuration.
+
+
+
