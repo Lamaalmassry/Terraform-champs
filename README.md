@@ -288,5 +288,62 @@ This week's focus is on learning about Amazon RDS and deploying an RDS instance 
   - **Key**: `Owner` | **Value**: `<type_your_name_here>`
 - Prefer to use variables for configuration.
 
+# Week Eight - Lambda: Manage File Transfer Between S3 Buckets
+
+## Overview
+FrogTech faces the challenge of automating the manual process of transferring files between two S3 buckets: `frogtech-us-external` and `frogtech-us-internal`. Currently, operators manually move files between these buckets, but the goal is to automate this process using an AWS Lambda function. You are tasked with designing and implementing this solution using Terraform and providing documentation to help FrogTech engineers understand the basics of Lambda.
+
+## Task Outline
+
+### 1. **Basics of AWS Lambda**
+   - **Function Event:**
+     - An event is the data or message that triggers the Lambda function. Events can come from various sources like S3, API Gateway, or CloudWatch.
+
+   - **Function Context:**
+     - The context object provides information about the invocation, function configuration, and execution environment.
+
+   - **Function Environment Variables:**
+     - These are key-value pairs that are set at the time of Lambda function creation and are accessible within your function code.
+
+   - **Lambda Layers:**
+     - Layers allow you to package libraries and other dependencies that you can use with your Lambda function.
+
+   - **Differences Between Synchronous and Asynchronous Invocations:**
+     - **Synchronous**: The caller waits for the function to process the event and return a response.
+     - **Asynchronous**: The function is invoked, and the caller does not wait for a response.
+
+### 2. **Implementation Using Terraform**
+
+   - **Create the Lambda Function:**
+     - Use the AWS Python SDK (Boto3) to manage file transfers between S3 buckets.
+   
+   - **Setup S3 Buckets:**
+     - Ensure the buckets `frogtech-us-external` and `frogtech-us-internal` are configured correctly.
+   
+   - **Define the Lambda Trigger:**
+     - Set up an event trigger (e.g., S3 put event) to invoke the Lambda function when a file is uploaded to `frogtech-us-external`.
+   
+   - **Environment Variables:**
+     - Use Terraform to define and pass environment variables to the Lambda function.
+   
+   - **Create IAM Role:**
+     - Define an IAM role for the Lambda function with appropriate permissions to access the S3 buckets.
+
+### 3. **Design a Deployment Diagram**
+   - Use a diagramming tool (e.g., draw.io) to create a diagram that illustrates the process flow and the resources created.
+
+## Requirement Specifications
+
+1. **Region:** 
+   - All resources must be created in the `us-east-1` region.
+
+2. **Tags:**
+   - Resources must have the following tags:
+     - **Key**: `Environment` | **Value**: `terraformChamps`
+     - **Key**: `Owner` | **Value**: `<Your_First_Name>`
+
+3. **Use of Variables:**
+   - Preferably use variables in your Terraform code to manage configurations and resource attributes.
+
 
 
