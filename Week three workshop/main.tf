@@ -44,10 +44,10 @@ resource "aws_iam_role" "taha_role" {
   })
 }
 
-resource "aws_iam_role_policy_attachment" "taha_role_attachment" {
+/*resource "aws_iam_role_policy_attachment" "taha_role_attachment" {
   role       = aws_iam_role.taha_role.name
   policy_arn = aws_iam_policy.taha_policy.arn
-}
+}*/
 
 resource "aws_iam_policy" "policy_mostafa" {
   name        = "policy-mostafa"
